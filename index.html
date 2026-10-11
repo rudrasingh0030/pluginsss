@@ -6,7 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090a12">
 <title>PLUGINSSS — Discover AI</title>
-<meta name="description" content="Discover powerful AI tools for creativity, coding, productivity and automation.">
+<meta name="description" content="Discover useful AI tools for writing, coding, design, research, video and productivity. Find the right tool for your next idea.">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="PLUGINSSS — Find your next favourite AI tool">
+<meta property="og:description" content="A curated directory of AI tools for creating, coding, researching and getting more done.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop stop-color=%22%23c4b5fd%22/%3E%3Cstop offset=%221%22 stop-color=%22%23713cff%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2264%22 height=%2264%22 rx=%2218%22 fill=%22%230f1020%22/%3E%3Cpath d=%22M32 9 37 25 53 32 37 37 32 55 27 37 11 32 27 25Z%22 fill=%22url(%23g)%22/%3E%3Ccircle cx=%2247%22 cy=%2216%22 r=%223%22 fill=%22%23f0abfc%22/%3E%3C/svg%3E">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
@@ -45,6 +50,20 @@ nav{
   box-shadow:0 0 30px #8b5cf633;
 }
 .logo span{color:#a78bfa}
+.logo-icon{position:relative;overflow:hidden;border:1px solid #ffffff25;background:linear-gradient(145deg,#a78bfa,#713cff 72%);isolation:isolate}
+.logo-icon:after{content:"";position:absolute;inset:1px;border-radius:11px;background:linear-gradient(145deg,#ffffff24,transparent 60%);pointer-events:none}
+.logo-icon svg{width:23px;height:23px;filter:drop-shadow(0 1px 5px #2b135b88);position:relative;z-index:1}
+::selection{background:#8b5cf655;color:#fff}
+:focus-visible{outline:2px solid #c4b5fd;outline-offset:3px}
+.tool-card{position:relative;overflow:hidden}
+.tool-card:before{content:"";position:absolute;inset:0 20% auto;height:1px;background:linear-gradient(90deg,transparent,#a78bfa66,transparent);opacity:0;transition:opacity .2s}
+.tool-card:hover:before{opacity:1}
+.results-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:-7px 0 17px;color:var(--muted);font-size:12px}
+.results-bar strong{color:#e5ddff;font-weight:700}
+.results-shortcut{border:1px solid var(--border);padding:4px 7px;border-radius:6px;color:#a9abc0;font-size:11px}
+.nav-links a,.footer-links a{transition:color .18s}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
 .nav-links{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:14px}
 .nav-links a:hover{color:white}
 .nav-actions{display:flex;gap:10px;align-items:center}
@@ -209,7 +228,7 @@ footer a:hover{color:white}
 <header class="container">
   <nav>
     <a href="#" class="logo" aria-label="PLUGINSSS home">
-      <div class="logo-icon">✳</div>
+      <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 1.8 14.8 9.2 22.2 12 14.8 14.8 12 22.2 9.2 14.8 1.8 12 9.2 9.2Z" fill="white"/><circle cx="19.1" cy="4.9" r="1.5" fill="#f0abfc"/></svg></div>
       plugin<span>sss</span>
     </a>
     <div class="nav-links">
@@ -227,7 +246,7 @@ footer a:hover{color:white}
 <section class="hero container">
   <div class="eyebrow"><span class="pulse"></span> YOUR AI TOOL DISCOVERY PLATFORM</div>
   <h1>Discover tools.<br><span class="gradient-text">Unlock possibilities.</span></h1>
-  <p>The right AI tool can change everything. Explore powerful tools for creating, coding, designing and getting more done.</p>
+  <p>Less searching. More creating. Discover useful AI tools for writing, coding, design, research and the ideas you have not built yet.</p>
 
   <div class="search-wrap">
     <span class="search-icon">⌕</span>
@@ -235,7 +254,7 @@ footer a:hover{color:white}
     <button class="btn btn-primary" id="searchButton">Search ↗</button>
   </div>
   <div class="hints">
-    <span>Popular:</span>
+    <span>Try a search:</span>
     <button class="hint" data-search="writing">AI Writing</button>
     <button class="hint" data-search="image">Image Generation</button>
     <button class="hint" data-search="coding">Coding</button>
@@ -251,8 +270,8 @@ footer a:hover{color:white}
 <section class="container section" id="explore">
   <div class="section-head">
     <div>
-      <h2>Explore the universe<span class="gradient-text">.</span></h2>
-      <p>Handpicked tools to power your next big idea.</p>
+      <h2>Find your next tool<span class="gradient-text">.</span></h2>
+      <p>Explore the directory, choose a category, and jump straight into a tool.</p>
     </div>
     <a href="#categories" class="text-link">Browse categories ↗</a>
   </div>
@@ -267,6 +286,7 @@ footer a:hover{color:white}
     <button class="chip" data-category="Research">⌕ Research</button>
   </div>
 
+  <div class="results-bar"><span id="resultsCount" aria-live="polite">Loading tools…</span><span class="results-shortcut">Press <kbd>/</kbd> to search</span></div>
   <div class="tool-grid" id="toolGrid"></div>
   <div class="empty" id="emptyState">
     <h3>No tools found</h3>
@@ -286,8 +306,8 @@ footer a:hover{color:white}
 </main>
 
 <footer class="container">
-  <a href="#" class="logo"><div class="logo-icon">✳</div>plugin<span>sss</span></a>
-  <span>© <span id="year"></span> PLUGINSSS. Discover more.</span>
+  <a href="#" class="logo"><div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 1.8 14.8 9.2 22.2 12 14.8 14.8 12 22.2 9.2 14.8 1.8 12 9.2 9.2Z" fill="white"/><circle cx="19.1" cy="4.9" r="1.5" fill="#f0abfc"/></svg></div>plugin<span>sss</span></a>
+  <span>© <span id="year"></span> PLUGINSSS. Made for curious minds.</span>
   <div class="footer-links">
     <a href="#explore">Explore</a>
     <a href="#about">About</a>
@@ -342,6 +362,8 @@ function renderTools(){
 
   emptyState.style.display = filtered.length ? "none" : "block";
   grid.style.display = filtered.length ? "grid" : "none";
+  const resultsCount = document.getElementById("resultsCount");
+  resultsCount.innerHTML = `<strong>${filtered.length}</strong> ${filtered.length === 1 ? "tool" : "tools"} found${activeCategory !== "All" ? ` in ${activeCategory}` : ""}${query ? ` for “${query.replace(/[&<>"]/g, "")}”` : ""}`;
 }
 
 chips.forEach(chip => {
@@ -370,6 +392,20 @@ document.getElementById("resetButton").addEventListener("click", () => {
   activeCategory = "All";
   chips.forEach(c => c.classList.toggle("active", c.dataset.category === "All"));
   renderTools();
+});
+
+document.addEventListener("keydown", event => {
+  const target = event.target;
+  const typing = target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable);
+  if (event.key === "/" && !typing && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    event.preventDefault();
+    searchInput.focus();
+  }
+  if (event.key === "Escape" && target === searchInput) {
+    searchInput.value = "";
+    renderTools();
+    searchInput.blur();
+  }
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
