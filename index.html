@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090a12">
-<title>PLUGINSSS — Discover AI</title>
-<meta name="description" content="Discover useful AI tools for writing, coding, design, research, video and productivity. Find the right tool for your next idea.">
+<title>AI Tools — Discover More | PLUGINSSS</title>
+<meta name="description" content="Explore AI tools for writing, coding, research, design and productivity.">
 <meta name="color-scheme" content="dark">
 <meta property="og:title" content="PLUGINSSS — Find your next favourite AI tool">
 <meta property="og:description" content="A curated directory of AI tools for creating, coding, researching and getting more done.">
@@ -221,21 +221,34 @@ footer a:hover{color:white}
   .cta{margin:50px 0;padding:35px 18px}
   footer{align-items:flex-start;flex-direction:column}
 }
+:root{--purple:#8b5cf6;--pink:#8b5cf6;--green:#5eead4}
+
+:root{--bg:#090b16;--panel:#111827;--card:#131b2b;--border:#29354b;--text:#f6f8ff;--muted:#9baac2;--purple:#8b5cf6;--pink:#ec4899;--green:#5eead4}
+.nav-links{gap:12px;flex-wrap:wrap}.nav-links a[aria-current=page]{color:#fff;background:#ffffff12;border-radius:8px;padding:7px 9px}
+.page-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:32px auto 50px}.page-nav a{border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:12px;color:#d7d0ff}.page-nav a.current{background:color-mix(in srgb,var(--purple) 16%,transparent);border-color:var(--purple);color:#fff}
+.game-grid,.info-grid,.faq-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:25px 0 42px}
+.game-card,.info-card,.faq-card{padding:23px;border:1px solid var(--border);border-radius:17px;background:linear-gradient(145deg,var(--card),var(--panel))}
+.game-card{display:flex;flex-direction:column;min-height:185px}.game-card .emoji,.info-card .emoji{font-size:27px;margin-bottom:14px}
+.game-card h3,.info-card h3,.faq-card h3{font-size:17px;margin-bottom:9px}.game-card p,.info-card p,.faq-card p{font-size:13px;color:var(--muted);line-height:1.8;flex:1}
+.game-card a{display:inline-block;color:#d7d0ff;font-size:12px;font-weight:700;margin-top:17px}
+.page-hero{padding:55px 0 35px;text-align:center}.page-hero h1{font-size:clamp(38px,6vw,62px);letter-spacing:-2px;margin:20px auto 14px}.page-hero p{max-width:700px;margin:auto;color:var(--muted);line-height:1.8}
+.kicker{display:inline-block;padding:8px 12px;border:1px solid color-mix(in srgb,var(--purple) 40%,transparent);background:color-mix(in srgb,var(--purple) 8%,transparent);border-radius:99px;color:#ddd6fe;font-size:11px;font-weight:800;letter-spacing:1px}
+.content-wrap{padding:0 0 35px}.contact-panel{border:1px solid var(--border);background:var(--panel);border-radius:18px;padding:25px;margin:15px auto 30px}.contact-panel p{color:var(--muted);font-size:14px;line-height:1.8;margin:10px 0}
+footer{gap:15px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+@media(max-width:800px){.game-grid,.info-grid,.faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-links{gap:6px;font-size:12px}}
+@media(max-width:560px){.game-grid,.info-grid,.faq-grid{grid-template-columns:1fr}.page-hero{padding:40px 0 25px}.nav-links{gap:5px}}
+
 </style>
 </head>
 <body>
 
 <header class="container">
   <nav>
-    <a href="#" class="logo" aria-label="PLUGINSSS home">
+    <a href="index.html" class="logo" aria-label="PLUGINSSS home">
       <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 1.8 14.8 9.2 22.2 12 14.8 14.8 12 22.2 9.2 14.8 1.8 12 9.2 9.2Z" fill="white"/><circle cx="19.1" cy="4.9" r="1.5" fill="#f0abfc"/></svg></div>
       plugin<span>sss</span>
     </a>
-    <div class="nav-links">
-      <a href="#explore">Explore</a>
-      <a href="#categories">Categories</a>
-      <a href="#about">About</a>
-    </div>
+    <div class="nav-links"><a href="index.html" aria-current="page">AI Tools 1</a><a href="apps-2.html">AI Tools 2</a><a href="apps-3.html">Tools + Games</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
     <div class="nav-actions">
       <a class="btn" href="#explore">Discover ↗</a>
     </div>
@@ -245,8 +258,8 @@ footer a:hover{color:white}
 <main>
 <section class="hero container">
   <div class="eyebrow"><span class="pulse"></span> YOUR AI TOOL DISCOVERY PLATFORM</div>
-  <h1>Discover tools.<br><span class="gradient-text">Unlock possibilities.</span></h1>
-  <p>Less searching. More creating. Discover useful AI tools for writing, coding, design, research and the ideas you have not built yet.</p>
+  <h1>AI Tools<br><span class="gradient-text">Discover More</span></h1>
+  <p>Explore AI tools for writing, coding, research, design and productivity.</p>
 
   <div class="search-wrap">
     <span class="search-icon">⌕</span>
@@ -262,9 +275,9 @@ footer a:hover{color:white}
 </section>
 
 <section class="container stats" aria-label="Platform information">
-  <div class="stat"><strong id="toolCount">12+</strong><span>Featured tools</span></div>
+  <div class="stat"><strong id="toolCount">22</strong><span>Tools on this page</span></div>
   <div class="stat"><strong id="categoryCount">09</strong><span>Categories</span></div>
-  <div class="stat"><strong>24/7</strong><span>Discovery</span></div>
+  <div class="stat"><strong>5</strong><span>Website pages</span></div>
 </section>
 
 <section class="container section" id="explore">
@@ -306,14 +319,14 @@ footer a:hover{color:white}
     <a class="btn btn-primary" href="#explore">Explore the directory ↗</a>
   </div>
 </section>
+<div class="container page-nav" aria-label="Website pages"><a href="index.html" class="current" aria-current="page">AI Tools 1</a><a href="apps-2.html">AI Tools 2</a><a href="apps-3.html">Tools + Games</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
 </main>
 
 <footer class="container">
-  <a href="#" class="logo"><div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 1.8 14.8 9.2 22.2 12 14.8 14.8 12 22.2 9.2 14.8 1.8 12 9.2 9.2Z" fill="white"/><circle cx="19.1" cy="4.9" r="1.5" fill="#f0abfc"/></svg></div>plugin<span>sss</span></a>
+  <a href="index.html" class="logo"><div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 1.8 14.8 9.2 22.2 12 14.8 14.8 12 22.2 9.2 14.8 1.8 12 9.2 9.2Z" fill="white"/><circle cx="19.1" cy="4.9" r="1.5" fill="#f0abfc"/></svg></div>plugin<span>sss</span></a>
   <span>© <span id="year"></span> PLUGINSSS. Made for curious minds.</span>
   <div class="footer-links">
-    <a href="#explore">Explore</a>
-    <a href="#about">About</a>
+    <a href="index.html">Tools</a><a href="about.html">About</a><a href="contact.html">Contact</a>
   </div>
 </footer>
 
@@ -330,8 +343,7 @@ const tools = [
   {name:"Leonardo AI",icon:"◈",category:"Image",tag:"Image Generation",desc:"Create and experiment with AI-generated images and visual concepts.",url:"https://leonardo.ai"},
   {name:"Runway",icon:"▷",category:"Video",tag:"AI Video",desc:"Explore AI-powered tools for video generation and creative filmmaking.",url:"https://runwayml.com"},
   {name:"CapCut",icon:"◇",category:"Video",tag:"Video Editing",desc:"Edit videos and create social content with a range of creative tools.",url:"https://www.capcut.com"},
-  {name:"Notion",icon:"▤",category:"Productivity",tag:"Workspace",desc:"Organize notes, projects and knowledge in a flexible digital workspace.",url:"https://www.notion.so"}
-,
+  {name:"Notion",icon:"▤",category:"Productivity",tag:"Workspace",desc:"Organize notes, projects and knowledge in a flexible digital workspace.",url:"https://www.notion.so"},
   {name:"Grammarly",icon:"✍",category:"Writing",tag:"Writing Assistant",desc:"Improve clarity, tone and grammar across everyday writing.",url:"https://www.grammarly.com"},
   {name:"QuillBot",icon:"↻",category:"Writing",tag:"Paraphrasing",desc:"Rewrite passages, check grammar and summarize text.",url:"https://quillbot.com"},
   {name:"Jasper",icon:"✦",category:"Writing",tag:"Marketing Copy",desc:"Create and refine brand-focused marketing content.",url:"https://www.jasper.ai"},
@@ -341,51 +353,7 @@ const tools = [
   {name:"Rytr",icon:"✍",category:"Writing",tag:"Writing Assistant",desc:"Draft short-form content and ideas with an AI writing assistant.",url:"https://rytr.me"},
   {name:"DeepL Write",icon:"文",category:"Writing",tag:"Writing Refinement",desc:"Refine wording, grammar and style for clearer communication.",url:"https://www.deepl.com/write"},
   {name:"Replit",icon:"⌘",category:"Coding",tag:"Online IDE",desc:"Build, run and deploy projects in a collaborative browser-based workspace.",url:"https://replit.com"},
-  {name:"Windsurf",icon:"〰",category:"Coding",tag:"AI Code Editor",desc:"Develop software with an AI-powered coding environment.",url:"https://windsurf.com"},
-  {name:"v0",icon:"◈",category:"Coding",tag:"UI Generation",desc:"Generate and iterate on web interfaces from natural-language prompts.",url:"https://v0.dev"},
-  {name:"Bolt.new",icon:"ϟ",category:"Coding",tag:"Web App Builder",desc:"Prototype and build web applications from prompts in the browser.",url:"https://bolt.new"},
-  {name:"Lovable",icon:"♡",category:"Coding",tag:"App Builder",desc:"Turn product ideas into web app prototypes with AI assistance.",url:"https://lovable.dev"},
-  {name:"Tabnine",icon:"⌘",category:"Coding",tag:"Code Assistant",desc:"Get AI coding suggestions and assistance in your development workflow.",url:"https://www.tabnine.com"},
-  {name:"Sourcegraph Cody",icon:"⌘",category:"Coding",tag:"Code Assistant",desc:"Explore codebases and get coding help with AI-powered context.",url:"https://sourcegraph.com/cody"},
-  {name:"Blackbox AI",icon:"▣",category:"Coding",tag:"Coding Assistant",desc:"Explore AI tools for code generation, explanations and development.",url:"https://www.blackbox.ai"},
-  {name:"Phind",icon:"⌕",category:"Research",tag:"Developer Search",desc:"Search for technical answers and explore programming topics.",url:"https://www.phind.com"},
-  {name:"Elicit",icon:"⌕",category:"Research",tag:"Research Assistant",desc:"Find papers and organize evidence for literature reviews.",url:"https://elicit.com"},
-  {name:"Consensus",icon:"◎",category:"Research",tag:"Research Search",desc:"Explore research-backed answers drawn from scientific papers.",url:"https://consensus.app"},
-  {name:"SciSpace",icon:"⌕",category:"Research",tag:"Paper Assistant",desc:"Read, understand and explore academic papers with AI assistance.",url:"https://scispace.com"},
-  {name:"NotebookLM",icon:"▤",category:"Research",tag:"Source Research",desc:"Ask questions about your sources and create study-friendly summaries.",url:"https://notebooklm.google.com"},
-  {name:"Gamma",icon:"▥",category:"Productivity",tag:"Presentations",desc:"Create polished presentations, documents and visual pages with AI.",url:"https://gamma.app"},
-  {name:"Napkin AI",icon:"◇",category:"Image",tag:"Visual Storytelling",desc:"Turn written ideas into diagrams and visual explanations.",url:"https://www.napkin.ai"},
-  {name:"Ideogram",icon:"✺",category:"Image",tag:"Image Generation",desc:"Generate visuals and experiment with images containing designed text.",url:"https://ideogram.ai"},
-  {name:"Playground",icon:"◈",category:"Image",tag:"Image Creation",desc:"Explore AI-assisted image creation and visual design tools.",url:"https://playground.com"},
-  {name:"Krea",icon:"✧",category:"Image",tag:"Creative AI",desc:"Create and refine images with real-time AI creative tools.",url:"https://www.krea.ai"},
-  {name:"Freepik AI",icon:"✦",category:"Image",tag:"Design Assets",desc:"Explore AI image generation and creative assets for design projects.",url:"https://www.freepik.com/ai"},
-  {name:"Clipdrop",icon:"▧",category:"Image",tag:"Image Utilities",desc:"Use AI-powered tools for cleanup, relighting and image editing.",url:"https://clipdrop.co"},
-  {name:"Photoroom",icon:"◉",category:"Image",tag:"Photo Editing",desc:"Create product images and remove backgrounds with AI-assisted editing.",url:"https://www.photoroom.com"},
-  {name:"Recraft",icon:"◇",category:"Image",tag:"Vector & Image",desc:"Create illustrations, vector graphics and branded visual assets.",url:"https://www.recraft.ai"},
-  {name:"Microsoft Designer",icon:"✦",category:"Image",tag:"Design Assistant",desc:"Create social graphics and designs with AI-assisted features.",url:"https://designer.microsoft.com"},
-  {name:"Pika",icon:"▷",category:"Video",tag:"AI Video",desc:"Experiment with generating and transforming short video clips.",url:"https://pika.art"},
-  {name:"Kling AI",icon:"▷",category:"Video",tag:"Video Generation",desc:"Create AI-generated video clips from prompts and images.",url:"https://klingai.com"},
-  {name:"Luma Dream Machine",icon:"◉",category:"Video",tag:"AI Video",desc:"Explore video generation and creative motion from text and images.",url:"https://lumalabs.ai/dream-machine"},
-  {name:"Synthesia",icon:"▣",category:"Video",tag:"AI Avatars",desc:"Create presenter-style videos with AI avatars and voiceovers.",url:"https://www.synthesia.io"},
-  {name:"HeyGen",icon:"▷",category:"Video",tag:"AI Video",desc:"Make avatar videos and multilingual video content with AI tools.",url:"https://www.heygen.com"},
-  {name:"InVideo AI",icon:"▶",category:"Video",tag:"Video Maker",desc:"Turn prompts and ideas into editable video drafts.",url:"https://invideo.io"},
-  {name:"VEED",icon:"▻",category:"Video",tag:"Online Editor",desc:"Edit videos, add captions and explore AI-powered video features.",url:"https://www.veed.io"},
-  {name:"ElevenLabs",icon:"♫",category:"Audio",tag:"AI Voice",desc:"Generate expressive speech and explore AI voice tools.",url:"https://elevenlabs.io"},
-  {name:"Suno",icon:"♫",category:"Audio",tag:"Music Creation",desc:"Create original musical ideas and songs from prompts.",url:"https://suno.com"},
-  {name:"Udio",icon:"♫",category:"Audio",tag:"Music Generation",desc:"Explore AI-assisted music creation and song ideas.",url:"https://www.udio.com"},
-  {name:"Adobe Podcast",icon:"◖",category:"Audio",tag:"Audio Enhancement",desc:"Improve spoken audio and explore podcast recording tools.",url:"https://podcast.adobe.com"},
-  {name:"Murf AI",icon:"♫",category:"Audio",tag:"AI Voiceover",desc:"Create voiceovers for presentations, explainers and media projects.",url:"https://murf.ai"},
-  {name:"Krisp",icon:"◉",category:"Audio",tag:"Noise Cancellation",desc:"Reduce background noise in calls and recordings.",url:"https://krisp.ai"},
-  {name:"Otter.ai",icon:"▤",category:"Audio",tag:"Meeting Notes",desc:"Transcribe conversations and organize meeting notes.",url:"https://otter.ai"},
-  {name:"Khanmigo",icon:"✦",category:"Education",tag:"Learning Assistant",desc:"Explore guided learning and tutoring experiences from Khan Academy.",url:"https://www.khanacademy.org/khan-labs"},
-  {name:"Quizlet",icon:"▤",category:"Education",tag:"Study Tools",desc:"Study with flashcards, practice activities and AI-supported learning features.",url:"https://quizlet.com"},
-  {name:"Photomath",icon:"∑",category:"Education",tag:"Math Learning",desc:"Work through math problems with step-by-step learning support.",url:"https://photomath.com"},
-  {name:"Zapier",icon:"ϟ",category:"Productivity",tag:"Automation",desc:"Connect apps and automate repetitive workflows without manual handoffs.",url:"https://zapier.com"},
-  {name:"Make",icon:"⌘",category:"Productivity",tag:"Workflow Automation",desc:"Design visual automations that connect apps and services.",url:"https://www.make.com"},
-  {name:"Airtable",icon:"▦",category:"Productivity",tag:"AI Workspace",desc:"Organize projects and structured information with flexible workflows.",url:"https://www.airtable.com"},
-  {name:"HubSpot",icon:"◎",category:"Marketing",tag:"Marketing Platform",desc:"Explore AI-assisted features for marketing, sales and customer support.",url:"https://www.hubspot.com"},
-  {name:"Surfer SEO",icon:"⌕",category:"Marketing",tag:"SEO Content",desc:"Plan and optimize content with search-focused analysis tools.",url:"https://surferseo.com"},
-  {name:"AdCreative.ai",icon:"✦",category:"Marketing",tag:"Ad Creatives",desc:"Generate and test creative concepts for advertising campaigns.",url:"https://www.adcreative.ai"}
+  {name:"Windsurf",icon:"〰",category:"Coding",tag:"AI Code Editor",desc:"Develop software with an AI-powered coding environment.",url:"https://windsurf.com"}
 ];
 
 const grid = document.getElementById("toolGrid");
