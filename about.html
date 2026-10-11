@@ -1,0 +1,227 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090a12"><meta name="description" content="Learn about PLUGINSSS and how this directory helps people discover useful tools."><meta property="og:title" content="About Us — Ideas to Discovery | PLUGINSSS"><meta property="og:description" content="Learn about PLUGINSSS and how this directory helps people discover useful tools."><title>About Us — Ideas to Discovery | PLUGINSSS</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2218%22 fill=%22%230f1020%22/%3E%3Cpath d=%22M32 9 37 25 53 32 37 37 32 55 27 37 11 32 27 25Z%22 fill=%22%23a78bfa%22/%3E%3C/svg%3E"><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg:#090a12;
+  --panel:#10121e;
+  --card:#121522;
+  --border:#26293a;
+  --text:#f6f5ff;
+  --muted:#9295ab;
+  --purple:#8b5cf6;
+  --pink:#d946ef;
+  --green:#65e6bd;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'DM Sans',sans-serif;min-height:100vh;
+}
+button,input{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+.container{width:min(1160px,92%);margin:auto}
+nav{
+  height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
+  border-bottom:1px solid #ffffff0c;
+}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:23px;letter-spacing:-1px}
+.logo-icon{
+  display:grid;place-items:center;width:39px;height:39px;
+  background:linear-gradient(135deg,#a78bfa,#713cff);
+  border-radius:12px;font-size:22px;
+  box-shadow:0 0 30px #8b5cf633;
+}
+.logo span{color:#a78bfa}
+.logo-icon{position:relative;overflow:hidden;border:1px solid #ffffff25;background:linear-gradient(145deg,#a78bfa,#713cff 72%);isolation:isolate}
+.logo-icon:after{content:"";position:absolute;inset:1px;border-radius:11px;background:linear-gradient(145deg,#ffffff24,transparent 60%);pointer-events:none}
+.logo-icon svg{width:23px;height:23px;filter:drop-shadow(0 1px 5px #2b135b88);position:relative;z-index:1}
+::selection{background:#8b5cf655;color:#fff}
+:focus-visible{outline:2px solid #c4b5fd;outline-offset:3px}
+.tool-card{position:relative;overflow:hidden}
+.tool-card:before{content:"";position:absolute;inset:0 20% auto;height:1px;background:linear-gradient(90deg,transparent,#a78bfa66,transparent);opacity:0;transition:opacity .2s}
+.tool-card:hover:before{opacity:1}
+.results-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:-7px 0 17px;color:var(--muted);font-size:12px}
+.results-bar strong{color:#e5ddff;font-weight:700}
+.results-shortcut{border:1px solid var(--border);padding:4px 7px;border-radius:6px;color:#a9abc0;font-size:11px}
+.nav-links a,.footer-links a{transition:color .18s}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+.nav-links{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:14px}
+.nav-links a:hover{color:white}
+.nav-actions{display:flex;gap:10px;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 17px;border-radius:11px;border:1px solid var(--border);
+  color:var(--text);background:#ffffff06;font-weight:600;font-size:13px;
+  transition:.2s;
+}
+.btn:hover{transform:translateY(-2px);border-color:#8b5cf6}
+.btn-primary{
+  background:linear-gradient(135deg,#9365ff,#7040e8);
+  border-color:transparent;color:white;
+  box-shadow:0 7px 25px #7845f52b;
+}
+.btn-primary:hover{box-shadow:0 8px 32px #7845f550}
+.hero{
+  text-align:center;padding:94px 0 62px;position:relative;overflow:hidden;
+}
+.hero:before{
+  content:"";position:absolute;top:-240px;left:50%;
+  transform:translateX(-50%);width:680px;height:500px;
+  background:#773dff1b;filter:blur(100px);pointer-events:none;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid #8b5cf63d;background:#8b5cf610;
+  color:#c4b5fd;border-radius:99px;padding:8px 13px;
+  font-size:11px;font-weight:700;letter-spacing:1.4px;
+  position:relative;
+}
+.pulse{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 10px var(--green)}
+h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif}
+h1{
+  font-size:clamp(42px,7vw,76px);line-height:1.08;
+  letter-spacing:-3.8px;margin:27px auto 20px;max-width:850px;
+}
+.gradient-text{
+  background:linear-gradient(100deg,#c4b5fd,#9b7aff 45%,#f0abfc);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{max-width:580px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.8}
+.search-wrap{
+  max-width:650px;margin:34px auto 17px;padding:6px;
+  display:flex;align-items:center;gap:12px;
+  background:#141624;border:1px solid #363048;border-radius:15px;
+  box-shadow:0 15px 55px #0004;position:relative;
+  transition:.2s;
+}
+.search-wrap:focus-within{border-color:#8b5cf6;box-shadow:0 0 0 4px #8b5cf615}
+.search-icon{padding-left:12px;color:#a78bfa;font-size:20px}
+.search-wrap input{
+  flex:1;min-width:0;background:transparent;border:0;outline:0;
+  color:white;padding:13px 0;font-size:14px;
+}
+.search-wrap input::placeholder{color:#777b93}
+.search-wrap button{margin-right:0}
+.hints{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.hint{
+  border:1px solid var(--border);background:#ffffff04;
+  padding:6px 10px;border-radius:8px;color:#b6b7c8;cursor:pointer;
+}
+.hint:hover{border-color:var(--purple);color:white}
+.stats{
+  display:flex;justify-content:center;gap:55px;
+  padding:28px 0 38px;border-bottom:1px solid #ffffff0c;
+}
+.stat strong{font-family:'Space Grotesk';font-size:21px;display:block}
+.stat span{font-size:12px;color:var(--muted)}
+.section{padding:48px 0 16px}
+.section-head{
+  display:flex;justify-content:space-between;align-items:end;
+  gap:15px;margin-bottom:23px;
+}
+.section-head h2{font-size:27px;letter-spacing:-1px}
+.section-head p{color:var(--muted);font-size:13px;margin-top:7px}
+.text-link{font-size:13px;color:#bba6ff}
+.categories{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:25px}
+.chip{
+  border:1px solid var(--border);border-radius:10px;padding:10px 15px;
+  background:#ffffff04;color:#a9abc0;font-size:12px;font-weight:600;
+  transition:.2s;
+}
+.chip:hover,.chip.active{
+  color:white;background:#8b5cf61b;border-color:#8b5cf6;
+}
+.tool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tool-card{
+  background:linear-gradient(145deg,#141624,#0f111b);
+  border:1px solid var(--border);border-radius:17px;padding:21px;
+  transition:transform .22s,border-color .22s,box-shadow .22s;
+  display:flex;flex-direction:column;min-width:0;
+}
+.tool-card:hover{
+  transform:translateY(-5px);border-color:#7654c7;
+  box-shadow:0 15px 35px #0003;
+}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.tool-icon{
+  width:49px;height:49px;display:grid;place-items:center;
+  font-size:24px;border-radius:14px;border:1px solid #ffffff13;
+  background:linear-gradient(135deg,#ffffff0c,#ffffff03);
+}
+.tag{font-size:10px;color:#c4b5fd;background:#8b5cf618;border-radius:7px;padding:6px 9px}
+.tool-card h3{font-size:18px;margin:18px 0 8px}
+.tool-card p{color:var(--muted);font-size:13px;line-height:1.7;flex:1}
+.card-bottom{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  margin-top:22px;padding-top:15px;border-top:1px solid #ffffff0c;
+}
+.category-label{font-size:11px;color:#a3a5ba}
+.visit{font-size:12px;color:#c4b5fd;font-weight:700}
+.visit:hover{color:white}
+.empty{
+  display:none;text-align:center;padding:55px 15px;
+  border:1px dashed var(--border);border-radius:16px;color:var(--muted);
+}
+.empty h3{color:white;margin-bottom:8px}
+.cta{
+  margin:75px 0 65px;padding:45px 25px;text-align:center;
+  border:1px solid #8b5cf637;border-radius:22px;
+  background:radial-gradient(ellipse at top,#6433a42b,transparent 65%),#11121e;
+}
+.cta h2{font-size:clamp(25px,4vw,37px);letter-spacing:-1.2px}
+.cta p{font-size:14px;color:var(--muted);margin:13px 0 23px;line-height:1.8}
+footer{
+  border-top:1px solid #ffffff10;padding:27px 0 35px;
+  display:flex;justify-content:space-between;align-items:center;gap:15px;
+  color:var(--muted);font-size:12px;
+}
+.footer-links{display:flex;gap:18px}
+footer a:hover{color:white}
+@media(max-width:800px){
+  .nav-links{gap:14px}
+  .tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero{padding-top:75px}
+}
+@media(max-width:560px){
+  nav{height:67px}
+  .logo{font-size:20px}
+  .logo-icon{width:35px;height:35px}
+  .nav-links{display:none}
+  .nav-actions .btn{padding:9px 11px;font-size:12px}
+  .hero{padding:67px 0 40px}
+  h1{letter-spacing:-2px}
+  .hero p{font-size:14px}
+  .search-wrap{gap:7px}
+  .search-wrap .btn{padding:11px;font-size:12px}
+  .stats{gap:22px}
+  .stat strong{font-size:18px}
+  .stat span{font-size:10px}
+  .section-head h2{font-size:23px}
+  .tool-grid{grid-template-columns:1fr}
+  .tool-card{padding:19px}
+  .cta{margin:50px 0;padding:35px 18px}
+  footer{align-items:flex-start;flex-direction:column}
+}
+
+
+:root{--bg:#090b16;--panel:#111827;--card:#131b2b;--border:#29354b;--text:#f6f8ff;--muted:#9baac2;--purple:#8b5cf6;--pink:#ec4899;--green:#5eead4}
+.nav-links{gap:12px;flex-wrap:wrap}.nav-links a[aria-current=page]{color:#fff;background:#ffffff12;border-radius:8px;padding:7px 9px}
+.page-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:32px auto 50px}.page-nav a{border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:12px;color:#d7d0ff}.page-nav a.current{background:color-mix(in srgb,var(--purple) 16%,transparent);border-color:var(--purple);color:#fff}
+.game-grid,.info-grid,.faq-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:25px 0 42px}
+.game-card,.info-card,.faq-card{padding:23px;border:1px solid var(--border);border-radius:17px;background:linear-gradient(145deg,var(--card),var(--panel))}
+.game-card{display:flex;flex-direction:column;min-height:185px}.game-card .emoji,.info-card .emoji{font-size:27px;margin-bottom:14px}
+.game-card h3,.info-card h3,.faq-card h3{font-size:17px;margin-bottom:9px}.game-card p,.info-card p,.faq-card p{font-size:13px;color:var(--muted);line-height:1.8;flex:1}
+.game-card a{display:inline-block;color:#d7d0ff;font-size:12px;font-weight:700;margin-top:17px}
+.page-hero{padding:55px 0 35px;text-align:center}.page-hero h1{font-size:clamp(38px,6vw,62px);letter-spacing:-2px;margin:20px auto 14px}.page-hero p{max-width:700px;margin:auto;color:var(--muted);line-height:1.8}
+.kicker{display:inline-block;padding:8px 12px;border:1px solid color-mix(in srgb,var(--purple) 40%,transparent);background:color-mix(in srgb,var(--purple) 8%,transparent);border-radius:99px;color:#ddd6fe;font-size:11px;font-weight:800;letter-spacing:1px}
+.content-wrap{padding:0 0 35px}.contact-panel{border:1px solid var(--border);background:var(--panel);border-radius:18px;padding:25px;margin:15px auto 30px}.contact-panel p{color:var(--muted);font-size:14px;line-height:1.8;margin:10px 0}
+footer{gap:15px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+@media(max-width:800px){.game-grid,.info-grid,.faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-links{gap:6px;font-size:12px}}
+@media(max-width:560px){.game-grid,.info-grid,.faq-grid{grid-template-columns:1fr}.page-hero{padding:40px 0 25px}.nav-links{gap:5px}}
+
+:root{--purple:#a855f7;--pink:#a855f7;--green:#5eead4}</style></head><body><header class="container"><nav><a href="index.html" class="logo"><div class="logo-icon" aria-hidden="true">✦</div>plugin<span>sss</span></a><div class="nav-links"><a href="index.html">AI Tools 1</a><a href="apps-2.html">AI Tools 2</a><a href="apps-3.html">Tools + Games</a><a href="about.html" aria-current="page">About Us</a><a href="contact.html">Contact</a></div><div class="nav-actions"><a class="btn btn-primary" href="index.html">Explore ↗</a></div></nav></header><main><section class="page-hero container"><span class="kicker">PLUGINSSS · PAGE 4 OF 5</span><h1>About Us<br><span class="gradient-text">Ideas to Discovery</span></h1><p>Learn about PLUGINSSS and how this directory helps people discover useful tools.</p></section><section class="container content-wrap"><div class="info-grid"><article class="info-card"><div class="emoji">🧭</div><h3>Our mission</h3><p>Make discovering useful AI tools and digital experiences easier, clearer and less overwhelming.</p></article><article class="info-card"><div class="emoji">✨</div><h3>What we do</h3><p>Organize tools into categories, add short summaries and link visitors to providers' websites.</p></article><article class="info-card"><div class="emoji">🌱</div><h3>Built to grow</h3><p>PLUGINSSS is an evolving directory. New tools, categories and discovery features can be added over time.</p></article></div><div class="section-head"><div><h2>How it works<span class="gradient-text">.</span></h2><p>A simple path from idea to the right website.</p></div></div><div class="info-grid"><article class="info-card"><div class="emoji">01</div><h3>Browse</h3><p>Explore three tools pages and the online games collection.</p></article><article class="info-card"><div class="emoji">02</div><h3>Compare</h3><p>Read summaries and decide which service fits your task.</p></article><article class="info-card"><div class="emoji">03</div><h3>Visit</h3><p>Check the provider's official site for current features, pricing and terms.</p></article></div><div class="section-head"><div><h2>Frequently asked questions<span class="gradient-text">.</span></h2><p>Quick answers before you explore.</p></div></div><div class="faq-grid"><article class="faq-card"><h3>Is PLUGINSSS free?</h3><p>Browsing the directory is free. Individual services may have free, paid or limited plans.</p></article><article class="faq-card"><h3>Does every tool have a free plan?</h3><p>No. Check each provider's official website for current pricing and usage limits.</p></article><article class="faq-card"><h3>Does PLUGINSSS own these tools?</h3><p>No. Listed services belong to their respective owners.</p></article><article class="faq-card"><h3>Are all links guaranteed?</h3><p>Third-party websites may change. A listing is not an endorsement or guarantee.</p></article></div></section><div class="container page-nav"><a href="index.html">AI Tools 1</a><a href="apps-2.html">AI Tools 2</a><a href="apps-3.html">Tools + Games</a><a href="about.html" class="current">About Us</a><a href="contact.html">Contact</a></div></main><footer class="container"><a href="index.html" class="logo"><div class="logo-icon">✦</div>plugin<span>sss</span></a><span>© <span class="year"></span> PLUGINSSS. Made for curious minds.</span><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="index.html">AI Tools</a></div></footer><script>document.querySelectorAll(".year").forEach(el=>el.textContent=new Date().getFullYear());</script></body></html>
